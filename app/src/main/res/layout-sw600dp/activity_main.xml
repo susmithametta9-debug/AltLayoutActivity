@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                tools:text="Name" />
+
+            <TextView
+                style="@style/LabelTextStyle"
+                android:id="@+id/emailLabel"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:text="Email Address" />
+
+            <TextView
+                style="@style/LabelTextStyle"
+                android:id="@+id/extensionLabel"
+                android:text="Extension" />
+
+            <TextView
+                android:id="@+id/extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:text="Extension" />
+
+            <TextView
+                style="@style/LabelTextStyle"
+                android:id="@+id/departmentLabel"
+                android:text="Department" />
+
+            <TextView
+                android:id="@+id/department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                tools:text="Department name" />
+
+            <TextView
+                style="@style/LabelTextStyle"
+                android:id="@+id/supervisorLabel"
+                android:text="Supervisor" />
+
+            <TextView
+                android:id="@+id/supervisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:text="Supervisor's Name" />
+
+            <TextView
+                style="@style/LabelTextStyle"
+                android:id="@+id/directReportsLabel"
+                android:text="Direct Reports" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/directReportsRecyclerView"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
