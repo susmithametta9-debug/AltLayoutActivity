@@ -24,20 +24,20 @@ class MainActivity : AppCompatActivity() {
         val directReportsRecyclerView = findViewById<RecyclerView>(R.id.directReportsRecyclerView)
 
         profilePhoto.setImageResource(R.drawable.istockphoto)
-        nameTextView.text = "Michelle Townsend"
-        emailTextView.text = "mt@ourcompany.com"
+        nameTextView.text = getString(R.string.michelle_townsend)
+        emailTextView.text = getString(R.string.michelle_email)
         emailTextView.setTextColor(Color.BLUE)
-        extensionTextView.text = "2253"
-        departmentTextView.text = "Design"
-        supervisorTextView.text = "Gail Davers"
+        extensionTextView.text = getString(R.string.michelle_extension)
+        departmentTextView.text = getString(R.string.michelle_department)
+        supervisorTextView.text = getString(R.string.michelle_supervisor)
 
         val staffList = arrayOf(
-            "Kate Sacloff",
-            "Andrew Klein",
-            "Maria Ortega",
-            "Brent Stevenson",
-            "Daniel Cho",
-            "Jorge Gomez"
+            getString(R.string.kate_sacloff),
+            getString(R.string.andrew_klein),
+            getString(R.string.maria_ortega),
+            getString(R.string.brent_stevenson),
+            getString(R.string.daniel_cho),
+            getString(R.string.jorge_gomez)
         )
 
         directReportsRecyclerView.layoutManager = GridLayoutManager(this, resources.getInteger(R.integer.grid_columns))

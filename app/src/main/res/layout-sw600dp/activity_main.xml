@@ -30,60 +30,60 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-                tools:text="Name" />
+                android:text="@string/name_label" />
 
             <TextView
                 style="@style/LabelTextStyle"
                 android:id="@+id/emailLabel"
-                android:text="Email" />
+                android:text="@string/email_label" />
 
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                tools:text="Email Address" />
+                android:text="@string/email_address_label" />
 
             <TextView
                 style="@style/LabelTextStyle"
                 android:id="@+id/extensionLabel"
-                android:text="Extension" />
+                android:text="@string/extension_label" />
 
             <TextView
                 android:id="@+id/extension"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                tools:text="Extension" />
+                android:text="@string/extension_label" />
 
             <TextView
                 style="@style/LabelTextStyle"
                 android:id="@+id/departmentLabel"
-                android:text="Department" />
+                android:text="@string/department_label" />
 
             <TextView
                 android:id="@+id/department"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                tools:text="Department name" />
+                android:text="@string/department_name_label" />
 
             <TextView
                 style="@style/LabelTextStyle"
                 android:id="@+id/supervisorLabel"
-                android:text="Supervisor" />
+                android:text="@string/supervisor_label" />
 
             <TextView
                 android:id="@+id/supervisor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                tools:text="Supervisor's Name" />
+                android:text="@string/supervisors_name_label" />
 
             <TextView
                 style="@style/LabelTextStyle"
                 android:id="@+id/directReportsLabel"
-                android:text="Direct Reports" />
+                android:text="@string/direct_reports_label" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/directReportsRecyclerView"
